@@ -16,6 +16,8 @@ Não é necessário executar npm, instalar dependências ou fazer build. O arqui
 
 A aplicação usa o projeto **Cadastro - Teste**. A tabela public.pessoas e as políticas de acesso já foram configuradas. config.js contém somente a URL e a chave pública publishable; nunca adicione uma chave service_role ou secreta.
 
+A primeira página exibe somente o login. Ao restaurar uma sessão, o sistema consulta o Supabase para validar o usuário antes de mostrar o cadastro. Ao sair, o cadastro é ocultado imediatamente.
+
 Entre com um usuário do Supabase Auth. Se o e-mail ainda estiver pendente, confirme pelo link recebido antes de entrar. Cada usuário acessa somente seus próprios registros; o HTML público não dá acesso aos cadastros sem login.
 
 ## Funcionalidades
@@ -25,7 +27,7 @@ Entre com um usuário do Supabase Auth. Se o e-mail ainda estiver pendente, conf
 - Pesquisa por nome, CPF ou telefone.
 - Relatório por mês ou intervalo DD/MM, incluindo a virada do ano.
 - Exportação CSV e impressão de todos os resultados filtrados.
-- Demonstração com dados fictícios que ficam apenas na memória.
+- Página inicial exclusiva de login; cadastro exibido somente após autenticação.
 
 ## Arquivos
 
